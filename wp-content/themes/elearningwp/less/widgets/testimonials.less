@@ -1,0 +1,119 @@
+
+.testimonial-footer {
+	margin-top:    20px;
+	margin-bottom: 20px;
+	padding-right: 100px;
+}
+
+.testimonial_content {
+	//	background:    #F6F9FA;
+	padding:       20px 20px 30px 80px;
+	color:         #666;
+	font-size:     @thim_font_h6_font_size;
+	line-height:   @thim_font_h6_line_height;
+	font-weight:   normal;
+	position:      relative;
+	margin-bottom: 30px;
+	&:before {
+		content:  "\f10d";
+		font:     normal normal normal 40px/1 FontAwesome;
+		left:     25px;
+		position: absolute;
+		top:      20px;
+		color:    @thim_body_primary_color;
+	}
+	.arrow-bottom {
+		position:     absolute;
+		width:        0;
+		height:       0;
+		//		border-top:   15px solid #F6F9FA;
+		border-right: 15px solid transparent;
+		bottom:       -15px;
+		left:         50px;
+	}
+}
+
+.avatar-testimonial {
+	width:          90px;
+	height:         90px;
+	overflow:       hidden;
+	.rounded(50%);
+	display:        inline-block;
+	vertical-align: middle;
+	margin-right:   20px;
+}
+
+.title-regency {
+	display:        inline-block;
+	vertical-align: middle;
+	h6 {
+		margin-bottom: 5px;
+		margin-top:    0;
+		font-weight:   bold;
+		a {
+			color: inherit;
+		}
+		&:hover {
+			color: @thim_body_primary_color !important;
+		}
+	}
+}
+
+.thim-widget-testimonials {
+	padding-top:    60px;
+	padding-bottom: 50px;
+	max-width:      1170px;
+}
+
+.thim-widget-courses {
+	&:before, &:after {
+		display: table-cell;
+		content: "";
+		clear:   both;
+	}
+}
+
+.sc-testimonials {
+	position: relative;
+	.owl-pagination {
+		width:    auto;
+		position: absolute;
+		bottom:   55px;
+		right:    0;
+		z-index:  9;
+	}
+	&.layout-01 {
+		.testimonial_content {
+			text-align:    center;
+			padding:       0 100px 20px 100px;
+			margin-bottom: 10px;
+			font-style: italic;
+			&:before {
+				position:      static;
+				display:       block;
+				margin-bottom: 15px;
+			}
+		}
+		.testimonial-footer {
+			text-align:    center;
+			padding-right: 20px;
+		}
+		.owl-pagination {
+			position:   static;
+			margin-top: 25px;
+		}
+		.arrow-bottom {
+			width:      50px;
+			height:     3px;
+			border:     none !important;
+			background: @border-color;
+			margin:     30px auto 0 auto;
+			position:   static;
+			display:    block;
+		}
+		.avatar-testimonial {
+			width:  50px;
+			height: 50px;
+		}
+	}
+}

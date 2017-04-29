@@ -1,0 +1,84 @@
+footer#colophon {
+	.footer {
+		background-color: @thim_footer_bg_color;
+		padding-top:      60px;
+		padding-bottom:   50px;
+		.thim-widget-courses {
+			padding-top:    0;
+			padding-bottom: 0;
+		}
+		.widget-title {
+			color:         @thim_footer_title_font_color;
+			position:      relative;
+			margin-bottom: 45px;
+			&:after {
+				content:    "";
+				position:   absolute;
+				bottom:     -20px;
+				left:       0;
+				height:     3px;
+				background: #575C61;
+				width:      50px;
+			}
+		}
+		a {
+			color: @thim_footer_title_font_color;
+			&:hover {
+				color: @thim_body_primary_color;
+			}
+		}
+		.row aside {
+			padding-left:  15px;
+			padding-right: 15px;
+			color:         @thim_footer_text_font_color;
+		}
+		ul {
+			margin: 0;
+			li {
+				margin-bottom: 20px;
+				list-style:    none;
+				> a:before {
+					font:         normal normal normal 12px/1 FontAwesome;
+					content:      "\f178";
+					color:        #575C61;
+					margin-right: 8px;
+				}
+				&:last-child {
+					margin-bottom: 0;
+				}
+			}
+		}
+		.sub-menu, .child {
+			margin-left: 20px;
+			margin-top:  20px;
+		}
+	}
+	.copyright-area {
+		background:     @thim_copyright_bg_color;
+		color:          @thim_copyright_text_color;
+		padding-top:    45px;
+		padding-bottom: 45px;
+//		.row aside {
+//			padding-left:  15px;
+//			padding-right: 15px;
+//		}
+		.text-copyright {
+			a {
+				color: @thim_footer_title_font_color;
+				&:hover {
+					color: @thim_copyright_text_color;
+				}
+			}
+		}
+		a {
+			color: @thim_copyright_text_color;
+			&:hover {
+				color: @thim_footer_title_font_color;
+			}
+		}
+		ul li {
+			display:    inline-block;
+			list-style: none;
+		}
+	}
+}

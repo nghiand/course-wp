@@ -1,0 +1,112 @@
+/********* Updated to version 1.1
+-- fixed  menu in safari.
+-- fixed import  data demo.
+
+/********* Updated to version 1.2
+-- updated file default language.
+
+/********* Updated to version 1.3
+-- fixed Button Widget widget - Link.
+-- fixed Icon Box - Complete box link.
+-- updated user social sites.
+
+/********* Updated to version 1.4
+-- fixed bbPress register page responsive problem.
+-- fixed wrong questions navigation.
+-- fixed big logo in Firefox.
+
+/********* Updated to version 1.5
+-- fixed quiz results style.
+-- fixed wrong menu style on Safari.
+-- updated LearnPress templates.
+
+/********* Updated to version 1.6
+-- fixed tab Course curriculum in landing course page.
+-- made login pop-up faster.
+
+/********* Updated to version 1.7
+-- fixed Grid/List mode in blog page.
+-- improved header menu v2.
+-- recommended add-on LearnPress Course Review.
+-- updated demo data.
+
+/********* Updated to version 1.8
+-- updated items for mobile menu when using header ver 2.
+
+/********* Updated to version 1.9
+-- Fixed bugs with some custom widgets in WordPress version 4.4.
+
+/********* Updated to version 2.0
+-- Updated Testimonials display in RTL.
+-- Fixed can not save widgets with repeater fields.
+-- Fixed missing a less variable.
+
+/********* Updated to version 2.1
+-- Updated template files for WooCommerce 2.5.0.
+
+/********* Updated to version 2.20
+-- Disable update plugin notification (LearnPress).
+
+/********* Updated to version 2.3.0
+-- Enable update plugin notification (LearnPress).
+-- Upgraded to LearnPress version 1.0.
+-- Fixed logo position.
+-- Updated languages.
+-- Updated demo data.
+
+/********* Updated to version 2.3.1
+-- Updated plugin require.
+-- Improved shop style.
+
+/********* Updated to version 2.3.2
+-- Added package LearnPress Certificate addon.
+-- Fixed outdated WooCommerce templates.
+-- Improved style single course.
+-- Improved style quiz.
+
+/********* Updated to version 2.3.3
+-- Fixed doesn't show certificate.
+-- Fixed sorting widget courses.
+-- Fixed wrong price widget courses.
+-- Improved profile page.
+-- Updated tgmpa library to version 2.6.1.
+
+/********* Updated to version 2.3.4
+-- Updated Google Map.
+-- Updated framework allow override widget on child theme.
+-- Updated languages.
+
+/********* Updated to version 2.3.5
+-- Improved responsive style.
+-- Fixed outdated WooCommerce templates.
+-- Updated template single course.
+
+/********* Updated to version 2.3.6
+-- Prepared for new LearnPress 2.0.
+-- Updated languages.
+
+/********* Updated to version 2.3.7
+-- Added child theme package.
+-- Updated languages.
+
+/********* Updated to version 2.4 - 2016-11-22
+-- Updated prepare for LearnPress 2.0
+
+/********* Updated to version 2.4.1 - 2016-12-16
+-- Updated addons for LearnPress 2.0
+-- Fixed outdated LearnPress templates.
+-- Fixed finish course.
+
+/********* Updated to version 2.4.2 - 2016-12-22
+-- Updated outdated LearnPress templates.
+
+/********* Updated to version 2.4.3 - 2017-01-13
+-- Fixed outdated of Learnpress
+-- Update style Profile.
+
+/********* Updated to version 2.4.4 - 2017-02-17
+-- Added option to hidden LearnPress ads.
+-- Fixed change background image in customize
+-- Fixed change sub title in Course archive
+-- Update version theme
+-- Included child theme in package

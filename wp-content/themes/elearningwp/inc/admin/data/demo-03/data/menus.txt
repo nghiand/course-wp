@@ -1,0 +1,2 @@
+Primary Menu,Main Menu Left
+Primary Menu Right,Main Menu Right

@@ -1,0 +1,59 @@
+.thim-widget-tab {
+	background: @white;
+	.nav-tabs {
+		border-bottom: 2px @border-color solid;
+		margin-bottom: 20px;
+		margin-left:   0;
+		li {
+			margin:        0 15px -2px 15px;
+			border-bottom: 2px solid @border-color;
+			a {
+				color:       @thim_font_h6_color;
+				font-size:   @thim_font_h6_font_size;
+				font-weight: bold;
+				padding:     20px 10px;
+				border:      none;
+				background:  transparent;
+				&:hover, &:focus {
+					border:     none;
+					background: transparent;
+				}
+			}
+			&.active, &:hover {
+				border-color: @thim_body_primary_color;
+				a {
+					color: @thim_body_primary_color;
+				}
+			}
+		}
+	}
+	.tab-content {
+		padding: 0 25px 50px;
+	}
+}
+
+.sc_heading {
+	position:       relative;
+	margin-bottom:  20px;
+	padding-bottom: 10px;
+	.title {
+		margin-top: 0;
+	}
+	.line {
+		position:         absolute;
+		bottom:           0;
+		left:             0;
+		height:           3px;
+		background-color: #eee;
+		width:            50px;
+	}
+}
+
+.text-center {
+	.sc_heading {
+		.line {
+			left:        50%;
+			margin-left: -25px;
+		}
+	}
+}

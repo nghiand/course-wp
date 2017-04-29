@@ -1,0 +1,317 @@
+body {
+  background-color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  color: #333333;
+  font-size: 16px;
+  overflow-x: hidden;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #333333;
+}
+
+a:hover,
+a:focus {
+  outline: none;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat", sans-serif;
+}
+
+
+/*==================
+ HEADER SECTION
+====================*/
+#header {
+  background-color: #f8f8f8;
+  display: inline;
+}
+
+#header .header-area {
+  display: inline;
+  padding: 10px 0;
+}
+#header .header-area .header-top-left {
+  display: inline;
+}
+#header .header-area .header-top-left .top-email {
+  display: inline;
+  float: left;
+  font-size: 14px;
+}
+#header .header-area .header-top-left .top-email i {
+  margin-right: 5px;
+}
+#header .header-area .header-top-left .top-phone {
+  border-left: 1px solid #ddd;
+  display: inline;
+  font-size: 14px;
+  float: left;
+  margin-left: 15px;
+  padding-left: 15px;
+}
+#header .header-area .header-top-left .top-phone i {
+  margin-right: 5px;
+}
+#header .header-area .header-top-right {
+  display: inline;
+  float: left;
+  text-align: right;
+  width: 100%;
+}
+
+#header .header-area .header-top-right .top-user {
+    display: inline;
+    font-size: 14px;
+}
+
+#header .header-area .header-top-right .top-user i {
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+.vertical-align i{
+    vertical-align: middle;  
+}
+
+#header .row{
+    margin: 5px 0;
+}
+
+/*==================
+ SLIDER SECTION
+====================*/
+#slider .carousel-control{
+    background: none;
+}
+
+#slider .carousel-caption{
+    top: 35%;
+}
+
+/*==================
+ SERVICE SECTION
+====================*/
+#service {
+  display: inline;
+  float: left;
+  margin-top: -80px;
+  width: 100%;
+}
+#service .service-area {
+  display: inline;
+  float: left;
+  width: 100%;
+}
+#service .service-area .service-single {
+  background-color: #01bafd;
+  color: #fff;
+  display: inline;
+  float: left;
+  padding: 35px 25px;
+  text-align: center;
+  width: 33.33%;
+}
+#service .service-area .service-single:nth-child(2) {
+  background-color: #2ecc71;
+}
+#service .service-area .service-single:nth-child(3) {
+  background-color: #45a0de;
+}
+#service .service-area .service-single span {
+  font-size: 30px;
+}
+#service .service-area .service-single h3 {
+  font-size: 25px;
+}
+#service .service-area .service-single p {
+  font-weight: lighter;
+}
+
+/*==================
+ ABOUT SECTION
+====================*/
+#about-us {
+  display: inline;
+  float: left;
+  width: 100%;
+  padding: 100px 0;
+}
+#about-us .about-us-area {
+  display: inline;
+  float: left;
+  width: 100%;
+}
+#about-us .about-us-area .about-us-left {
+  display: inline;
+  float: left;
+  width: 100%;
+}
+#about-us .about-us-area .about-us-left h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+#about-us .about-us-area .about-us-left ul {
+  margin-left: 25px;
+  margin-bottom: 15px;
+}
+#about-us .about-us-area .about-us-left ul li {
+  line-height: 30px;
+  list-style: circle;
+}
+#about-us .about-us-area .about-us-right {
+  display: inline;
+  float: left;
+  width: 100%;
+  display: block;
+  width: 100%;
+  background-color: #ccc;
+}
+#about-us .about-us-area .about-us-right a {
+  display: block;
+  width: 100%;
+  position: relative;
+}
+#about-us .about-us-area .about-us-right a img {
+  width: 100%;
+}
+#about-us .about-us-area .about-us-right a:after {
+  background-color: rgba(0, 0, 0, 0.8);
+  bottom: 0;
+  color: #ddd;
+  content: '\f04b';
+  font-family: fontAwesome;
+  font-size: 50px;
+  left: 0;
+  padding-top: 27%;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 0;
+}
+
+/*==================
+ LATEST COURSES SECTION
+====================*/
+#latest-courses {
+  background-color: #333;
+  display: inline;
+  float: left;
+  padding: 100px 0;
+  width: 100%;
+}
+#latest-courses .latest-courses-area {
+  display: inline;
+  float: left;
+  width: 100%;
+}
+#latest-courses .title h2 {
+  color: #fff;
+  margin-bottom: 25px;
+  text-align: center;
+}
+#latest-courses .latest-courses-area .latest-courses-content {
+  display: inline;
+  float: left;
+  margin-top: 50px;
+  width: 100%;
+}
+
+#latest-courses .title {
+    color: white;
+}
+
+.latest-course-single {
+  background-color: #fff;
+  display: inline;
+  float: left;
+  width: 100%;
+  margin-bottom: 25px;
+}
+.latest-course-single .latest-course-img {
+  display: inline;
+  float: left;
+  width: 100%;
+}
+.latest-course-single .latest-course-img a {
+  display: block;
+}
+.latest-course-single .latest-course-img a img {
+  width: 100%;
+}
+.latest-course-single .latest-course-img .latest-course-imgcaption {
+  background-color: #f8f8f8;
+  display: inline;
+  float: left;
+  padding: 10px 15px;
+  width: 100%;
+}
+
+.latest-course-single .latest-course-img .latest-course-imgcaption span {
+  float: right;
+}
+.latest-course-single .latest-course-img .latest-course-imgcaption span i {
+  margin-right: 5px;
+}
+.latest-course-single .latest-course-single-content {
+  display: inline;
+  float: left;
+  width: 100%;
+  padding: 15px;
+}
+.latest-course-single .latest-course-single-content h4 {
+  color: #333;
+  line-height: 1.4;
+}
+.latest-course-single .latest-course-single-content h4 a {
+  color: #333;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.latest-course-single .latest-course-single-content p {
+  font-size: 14px;
+  letter-spacing: 0.3px;
+  line-height: 1.7;
+}
+.latest-course-single .latest-course-single-content .latest-course-single-contbottom {
+  border-top: 1px solid #ccc;
+  display: inline;
+  float: left;
+  margin-top: 15px;
+  padding-top: 15px;
+  width: 100%;
+}
+.latest-course-single .latest-course-single-content .latest-course-single-contbottom .course-details:hover, .latest-course-single .latest-course-single-content .latest-course-single-contbottom .course-details:focus {
+  color: #333;
+}
+
+/*==================
+ FOOTER SECTION
+====================*/
+#footer{
+  display: inline;
+  float: left;
+  padding: 20px 0;
+  width: 100%;    
+}
+
+#footer .row{
+    vertical-align: center;
+}
+
+#footer p.text{
+    margin: 0px;
+}

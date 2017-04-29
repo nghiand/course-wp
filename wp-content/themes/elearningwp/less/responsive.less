@@ -1,0 +1,893 @@
+.custom-readmore {
+	overflow: hidden;
+	.content-inner {
+		.smicon-read {
+			border-width: 2px;
+			padding:      6px 20px;
+			i {
+				display: none;
+			}
+		}
+	}
+}
+
+// fix css site-origin
+@media (min-width: 1200px) {
+	.siteorigin-panels-stretch {
+		margin-left:   -385px;
+		margin-right:  -385px;
+		padding-left:  385px;
+		padding-right: 385px;
+		&.thim-fix-stretched {
+			padding-left:  0;
+			padding-right: 0;
+		}
+	}
+}
+
+@media (min-width: 1024px) {
+	.custom-readmore {
+		padding-top:         45px;
+		background-repeat:   no-repeat !important;
+		background-position: bottom right;
+		padding-bottom:      34px;
+		.content-inner {
+			position:      relative;
+			padding-right: 160px;
+			.smicon-read {
+				position:      absolute;
+				top:           50%;
+				margin-top:    -30px;
+				right:         0;
+				border-radius: 5px;
+				font-size:     115%;
+				i {
+					display: none;
+				}
+				&:hover {
+					opacity: 0.7
+				}
+			}
+			.icon-box-title, .desc-icon-box p {
+				font-style: italic;
+			}
+		}
+		.boxes-icon {
+			height: auto !important;
+			.inner-icon {
+				height: auto
+			}
+		}
+	}
+
+	.images-student {
+		margin-top: -100px;
+		position:   relative;
+	}
+}
+
+@media (min-width: 992px) {
+	.course-grid, .products-grid, .blog-grid {
+		.col-md-3 {
+			&:nth-child(4n+1) {
+				clear: both;
+			}
+		}
+		.col-md-4 {
+			&:nth-child(3n+1) {
+				clear: both;
+			}
+		}
+		.col-md-6 {
+			&:nth-child(2n+1) {
+				clear: both;
+			}
+		}
+	}
+
+	// widget post display
+	.posts-display {
+		.col-md-6 {
+			&:nth-child(2n+1) {
+				clear: both;
+			}
+		}
+	}
+
+	// list courses
+	#main {
+		.course-list {
+			article {
+				margin-bottom: 15px;
+				width:         100%;
+				overflow:      hidden;
+			}
+			.inner-course {
+				display:       table;
+				margin-bottom: 0 !important;
+				width:         100%;
+				border:        1px solid #DDD;
+				table-layout:  fixed;
+				.wrapper-course-thumbnail, .item-list-center, .course-excerpt {
+					width:          33%;
+					display:        table-cell;
+					border-right:   1px solid #E9E9E9;
+					vertical-align: middle;
+				}
+				.course-excerpt {
+					border-right: none;
+					padding:      20px;
+					h6 {
+						margin-bottom: 10px;
+						font-style:    italic;
+						color:         @thim_body_primary_color;
+					}
+				}
+				.course-title {
+					padding-top: 0 !important;
+				}
+				&:hover {
+					border-color: @thim_body_primary_color;
+				}
+			}
+
+		}
+	}
+
+	// list shop
+	.woocommerce, .woocommerce-page {
+		.site-content {
+			ul.archive_switch {
+				&.products-list {
+					padding-top: 50px;
+					.hidden-product-list {
+						display: none;
+					}
+					.product-item-content {
+						width: calc(~" 100% - 280px ");
+						float: left;
+					}
+					.type-product.sale .item-product .in-list .price {
+						margin-left: 0 !important;
+					}
+
+					li {
+						width:      100%;
+						margin:     0 0 50px 0;
+						float:      none;
+						list-style: none;
+						&.product-category {
+							a {
+								img {
+									max-width:  250px;
+									box-shadow: none;
+								}
+								h3 {
+									font-size:   20px;
+									font-weight: normal;
+									&:hover {
+										color: @thim_body_primary_color;
+									}
+								}
+							}
+						}
+						&:last-child {
+							border: none;
+						}
+						.item-product {
+							&:after {
+								display: block;
+								content: "";
+								clear:   both;
+							}
+
+							h3 {
+								font-size:      @thim_font_h5_font_size;
+								color:          @thim_font_h5_color;
+								line-height:    @thim_font_h5_line_height;
+								text-transform: none !important;
+								padding-bottom: 5px;
+								a {
+									&:hover {
+										color: @thim_body_primary_color
+									}
+								}
+							}
+							.description {
+								line-height: 26px;
+								padding-top: 20px;
+							}
+							.product-hover {
+								.product-button {
+									display: none !important;
+								}
+								margin-right: 20px;
+								float:        left;
+								max-width:    260px;
+								position:     relative;
+								overflow:     hidden;
+								.product-image {
+									img {
+										width: 100%;
+									}
+									.product-change-images {
+										position:                    absolute;
+										top:                         0;
+										left:                        0;
+										bottom:                      0;
+										right:                       0;
+										opacity:                     0;
+										filter:                      alpha(opacity=00);
+										-webkit-transition:          all ease-in-out 0.3s;
+										-moz-transition:             all ease-in-out 0.3s;
+										-o-transition:               all ease-in-out 0.3s;
+										transition:                  all ease-in-out 0.3s;
+										-webkit-backface-visibility: hidden;
+									}
+								}
+								&:hover {
+									cursor: pointer;
+									.product-button {
+										opacity: 1;
+										top:     0
+									}
+									.product-change-images {
+										opacity: 1;
+										filter:  alpha(opacity=100);
+									}
+								}
+							}
+							> .ob_warpper, > .yith-wcwl-add-to-wishlist, > .star-rating, > .price, > .hr {
+								display: none !important;
+							}
+							.in-list {
+								display: block !important;
+								clear:   both;
+
+								.star-rating {
+									margin-top: 10px;
+								}
+								.price {
+									margin-top: 20px;
+									font-size:  20px;
+
+									.amount {
+										color:       @thim_body_primary_color !important;
+										font-weight: bold;
+									}
+									del {
+										.amount {
+											color: @sale_price_color !important;
+										}
+									}
+									ins {
+										.amount {
+											color: @thim_body_primary_color !important;
+										}
+									}
+
+								}
+								.box-button-list {
+									margin-top: 20px;
+									&:after {
+										content: "";
+										display: block;
+										clear:   both;
+									}
+									.box-cart {
+										float:        left;
+										margin-right: 10px;
+										a.button {
+											line-height:    22px;
+											font-weight:    normal;
+											text-transform: uppercase;
+											background:     transparent;
+											box-shadow:     none;
+											text-shadow:    none;
+											border-radius:  0;
+											border:         1px #e1e8ed solid;
+											color:          @thim_font_body_color;
+											margin:         0;
+											&.add_to_cart_button {
+												&:before {
+													font-family:  FontAwesome;
+													content:      "\f07a";
+													font-size:    16px;
+													margin-right: 10px;
+												}
+												&.loading, &.added {
+													&:before {
+														position: relative;
+														top:      auto;
+														right:    auto;
+													}
+												}
+											}
+											&:hover {
+												background: @thim_body_primary_color;
+												color:      #fff;
+											}
+										}
+									}
+
+									.quick-view {
+										width:        40px;
+										height:       40px;
+										line-height:  40px;
+										float:        left;
+										cursor:       pointer;
+										border:       1px solid #e1e8ed;
+										color:        #aaa;
+										text-align:   center;
+										margin-right: 10px;
+										position:     relative;
+										&:active {
+											top: 1px;
+										}
+										&:hover {
+											background: @thim_body_primary_color;
+											color:      #fff;
+										}
+									}
+									.compare {
+										font-size:     0;
+										width:         40px;
+										height:        40px;
+										line-height:   40px;
+										text-align:    center;
+										background:    transparent;
+										border-radius: 0;
+										box-shadow:    none;
+										border:        1px solid #e1e8ed;
+										color:         #aaa;
+										padding:       0;
+										margin-right:  10px;
+										float:         left;
+										&:before {
+											position:    static !important;
+											content:     "\f080";
+											font-size:   16px;
+											font-family: 'FontAwesome';
+										}
+										&.added {
+											&:before {
+												font-family: WooCommerce;
+												content:     "\e017";
+												right:       0;
+												top:         0;
+												left:        0;
+											}
+										}
+										&:hover {
+											background: @thim_body_primary_color;
+											color:      #fff;
+										}
+									}
+									.yith-wcwl-add-to-wishlist {
+										float:  left;
+										margin: 0;
+										a {
+											position:      relative;
+											&:active {
+												top: 1px;
+											}
+											&:before {
+												content:     "\f08a";
+												font-size:   16px;
+												font-family: 'FontAwesome';
+											}
+											border:        1px solid #e1e8ed !important;
+											color:         #aaa !important;
+											text-align:    center;
+											font-size:     0 !important;
+											width:         40px;
+											height:        40px;
+											line-height:   40px !important;
+											display:       inline-block;
+											border-radius: 0 !important;
+											&:hover {
+												background: @thim_body_primary_color;
+												&:before {
+													color: #fff;
+												}
+											}
+										}
+										span.feedback {
+											display: none;
+										}
+										.yith-wcwl-wishlistaddedbrowse, .yith-wcwl-wishlistexistsbrowse {
+											&.show {
+												a {
+													&:before {
+														content: "\f004";
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	// list blog
+	body {
+		.blog-list {
+			article {
+				width: 100%;
+				.content-inner {
+					.post-formats-wrapper {
+						float:        left;
+						margin-right: 30px;
+					}
+				}
+				&.format-audio {
+					.post-formats-wrapper {
+						width:     100%;
+						max-width: @max-width-blog;
+					}
+					.entry-content {
+						width: calc(~"100% - 30px -" @max-width-blog);
+						float: left;
+					}
+				}
+				&.format-standard, &.format-image, &.format-gallery, &.format-link {
+					&.has-post-thumbnail .content-inner {
+						.post-formats-wrapper {
+							max-width: @max-width-blog;
+							overflow:  hidden;
+						}
+						.entry-content {
+							width: calc(~"100% - 30px -" @max-width-blog);
+							float: left;
+						}
+					}
+				}
+
+				&.format-video {
+					.content-inner {
+						.post-formats-wrapper {
+							iframe {
+								max-width:  @max-width-blog;
+								max-height: @max-height-blog;
+							}
+						}
+						.entry-content {
+							width: calc(~"100% - 30px -" @max-width-blog);
+							float: left;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 991px) {
+	.course-grid, .archive_switch, .blog-grid {
+		.col-sm-6 {
+			&:nth-child(2n+1) {
+				clear: both;
+			}
+		}
+	}
+
+	// widget post display
+	.posts-display {
+		.col-sm-6 {
+			&:nth-child(2n+1) {
+				clear: both;
+			}
+		}
+	}
+
+	#main {
+		.course-list {
+			article {
+				float: left;
+			}
+			.course-excerpt {
+				display: none;
+			}
+		}
+	}
+
+	.breadcrumbs-wrapper {
+		.display {
+			display: none !important;
+		}
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	.course-grid, .products-grid, .blog-grid {
+		.col-sm-6 {
+			&:nth-child(2n+1) {
+				clear: both;
+			}
+		}
+	}
+
+	.woocommerce.single-product div.product .related.products .blog-grid li.product {
+		width: 50% !important;
+		&:nth-child(2n+1) {
+			clear: both;
+		}
+	}
+
+	.widget-box-title .browse-all-courses {
+		position: static;
+	}
+
+	.widget-box-title {
+		padding-right: 0;
+		p {
+			margin-bottom: 0;
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	.width-logo{
+		&.table-cell{
+			display: block;
+			float: left;
+		}
+		.no-sticky-logo img {
+			margin-bottom: unit(@thim_margin_bottom_logo, px);
+			margin-top:    unit(@thim_margin_top_logo, px);
+		}
+	}
+
+	#masthead.affix-top {
+		margin-top: unit(@thim_margin_top_header, px);
+	}
+}
+
+@media (max-width: 767px) {
+	.alignright, .alignleft {
+		float: none;
+	}
+
+	.sc-testimonials {
+		&.layout-01 {
+			.testimonial_content {
+				padding: 0 20px 20px;
+			}
+		}
+	}
+
+	#top-sidebar-courses {
+		padding-left:  15px;
+		padding-right: 15px;
+	}
+
+	.contact-page .row .wpcf7-form-control-wrap {
+		width: 100%;
+		&.your-name, &.your-email {
+			margin-bottom: 10px;
+		}
+	}
+
+	.profile-tabs, .user-info {
+		width:   100%;
+		padding: 0;
+	}
+
+	.megacol {
+		background-image: none !important;
+	}
+
+	.user-courses-content .own-courses .own-courses-wrapper .inner-own-course {
+		width: 100%;
+	}
+
+	footer#colophon .copyright-area {
+		padding-top:    20px;
+		padding-bottom: 20px;
+		.text-right {
+			text-align: left;
+			margin-top: 20px;
+		}
+	}
+
+	.widget-box-title .browse-all-courses {
+		position: static;
+	}
+
+	.widget-box-title {
+		padding-right: 0;
+		p {
+			margin-bottom: 0;
+		}
+	}
+
+	.custom-images {
+		margin-top:    25px;
+		margin-bottom: 25px;;
+	}
+
+	.top_site_main .page-title-wrapper {
+		padding-top:    20px;
+		padding-bottom: 30px;
+	}
+
+	.course-grid, .products-grid, .blog-grid {
+		.col-sm-6 {
+			&:nth-child(2n+1) {
+				clear: both;
+			}
+		}
+	}
+
+	.site-content {
+		padding: 35px 15px;
+	}
+
+	.woocommerce.single-product {
+		.col-sm-12 div.product, .col-sm-9 div.product {
+			div.images, div.summary {
+				width: 100% !important;
+			}
+
+		}
+	}
+
+	.woocommerce.single-product div.product .related.products .blog-grid li.product {
+		width: 50% !important;
+		&:nth-child(2n+1) {
+			clear: both;
+		}
+	}
+
+	.thim-widget-courses, .thim-widget-testimonials {
+		padding-top:    40px;
+		padding-bottom: 30px;
+	}
+
+	.site-header {
+		padding: 15px 0;
+		&.sticky-header.affix {
+			padding-top:    7px;
+			padding-bottom: 7px;
+			.navbar-nav {
+				> li {
+					> a, > span.disable_link {
+						padding: 0;
+					}
+				}
+			}
+		}
+	}
+
+	.thim-gallery-images-default {
+		.item {
+			float: left;
+			width: 50% !important;
+		}
+	}
+
+	.overlay-black {
+		padding-bottom: 30px !important;
+		padding-top:    50px !important;
+	}
+
+	.fix-responsive {
+		margin-left: 0 !important;
+	}
+
+	.single .learn-press {
+		header {
+			overflow: hidden;
+			.author {
+				float: left
+			}
+		}
+		#course-landing .course-students > span:after {
+			display: none;
+		}
+	}
+
+	#masthead.affix-top {
+		margin-top: 0;
+	}
+
+	.width-logo img {
+		margin: 0;
+	}
+
+	.mobile-logo-custom {
+		.sticky-logo, .no-sticky-logo {
+			display: none;
+		}
+		&.affix-top {
+			.sticky-logo-mobile {
+				display: none;
+			}
+		}
+
+		&.affix {
+			.no-sticky-logo-mobile {
+				display: none;
+			}
+		}
+	}
+
+	.learn-press h1.entry-title, .menu-scoll-landing .col-md-6 {
+		width: 100%;
+	}
+
+	.menu-scoll-landing .col-md-6 {
+		margin-bottom: 15px !important;
+		text-align:    left;
+	}
+
+	.menu-scoll-landing .course-wishlist, .menu-scoll-landing .course-wishlisted {
+		display:     inline-block;
+		font-size:   0;
+		padding:     13px;
+		margin-left: 0;
+		&:after {
+			content: "\f08a";
+			font:    normal normal normal 14px/1 FontAwesome;
+			color:   @thim_body_primary_color;
+		}
+	}
+
+	.menu-scoll-landing .course-wishlisted {
+		&:after {
+			content: "\f004";
+		}
+	}
+
+	.wrapper-author {
+		margin-bottom: 25px;
+	}
+
+}
+
+@media screen and (max-width: 600px) {
+	.admin-bar .menu-scoll-landing {
+		top: 0
+	}
+}
+
+@media (max-width: 480px) {
+    #user_quizzes {
+        .quiz-result {
+            .quiz-title a {
+
+            }
+            .quiz-result-mark, .quiz-result-summary {
+            }
+        }
+    }
+	.course-grid, .archive_switch {
+		.col-sm-6 {
+			width: 100%;
+		}
+	}
+
+	.one-courses-page-content {
+		.col-sm-4, .col-sm-8 {
+			display: block;
+		}
+	}
+
+	// widget post display
+	.posts-display {
+		.col-sm-6 {
+			width: 100%;
+		}
+	}
+
+	.breadcrumbs-wrapper.button-list-gird {
+		.woocommerce-breadcrumb, .display, .thim-breadcrumbs, #breadcrumbs {
+			width: 100%;
+		}
+		.display {
+			padding-top: 20px;
+			text-align:  left;
+			a {
+				margin-left:  0;
+				margin-right: 20px;
+			}
+		}
+	}
+
+	.woocommerce.single-product div.product .related.products .blog-grid li.product {
+		width: 100% !important;
+		&:nth-child(2n+1) {
+			clear: both;
+		}
+	}
+
+	.thim-gallery-images-default {
+		.item {
+			float: left;
+			width: 100% !important;
+		}
+	}
+
+	.overlay-black {
+		.icon-box-title {
+			font-size:   24px !important;
+			line-height: 32px !important;
+			span {
+				display: block;
+			}
+		}
+	}
+
+	.thim-widget-courses-searching .courses-searching {
+		input {
+			height:       40px;
+			line-height:  40px;
+			font-size:    15px;
+			padding-left: 10px;
+			width:        calc(~"100% - 40px");
+		}
+		button {
+			width:       40px;
+			line-height: 40px;
+		}
+	}
+
+	.custom-readmore {
+		.icon-left .content-inner {
+			width:      100% !important;
+			text-align: center;
+			padding:    15px 0;
+			.icon-box-title {
+				font-size: 26px !important;
+			}
+		}
+		.icon-left .boxes-icon {
+			margin: 0 auto;
+			float:  none;
+		}
+	}
+
+	.wrapper-author {
+		.avatar-instructors, .author-right {
+			width:   100%;
+			display: inline-block;
+		}
+	}
+
+}
+
+/* Fix buddypress responsive */
+
+@media (max-width: 767px) {
+	#buddypress form:after {
+		content: " ";
+		display: table;
+		clear: both;
+	}
+	#basic-details-section {
+		width: 100%;
+		input {
+			width: 90% !important;
+		}
+	}
+
+	.thim-widget-slider .slider-desc{
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+
+@media ( max-width: 360px ) {
+	.mobile-menu-container{
+		width: 270px;
+	}
+	.mobile-menu-open .content-pusher{
+		webkit-transform: translate3d(270px, 0, 0);
+		transform: translate3d(270px, 0, 0)
+	}
+}

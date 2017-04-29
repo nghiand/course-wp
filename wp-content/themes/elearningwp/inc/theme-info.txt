@@ -1,0 +1,13 @@
+/*
+Theme Name: eLearningWP
+Theme URI: http://elearningwp.thimpress.com/
+Author: ThimPress
+Author URI: http://thimpress.com
+Description: A education WordPress theme.
+Version: 2.4.4
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: two-columns, three-columns, left-sidebar, right-sidebar, fixed-layout, responsive-layout, custom-background, custom-header, custom-menu, editor-style, post-formats, rtl-language-support, sticky-post, theme-options, translation-ready, accessibility-ready
+Text Domain: thim
+Domain Path: /languages/
+*/
