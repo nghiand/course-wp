@@ -69,6 +69,21 @@ function remove_width_attribute($html) {
 }
 add_filter('post_thumbnail_html', 'remove_width_attribute', 10);
 
+
+add_action('after_setup_theme', 'remove_admin_bar');
+function remove_admin_bar() {
+    if (!current_user_can('administrator') && !is_admin()) {
+        show_admin_bar(false);
+    }
+}
+
+function custom_posts_per_page( $query ) {
+    if ($query->is_archive('project')) {
+        set_query_var('posts_per_page', 1);
+    }
+}
+add_action('pre_get_posts', 'custom_posts_per_page');
+
 p2p_register_connection_type(array(
     'name' => 'member',
     'from' => 'course',

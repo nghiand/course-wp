@@ -19,8 +19,18 @@
                         <div class="course-info">
                             <h3>Информация</h3>
                             <p>Автор: <span id="author"><?php echo the_author_nickname(); ?></span></p>
-                            <p>Количество уроков: <span id="unit-cnt">20</span></p>
-                            <p>Количество участников: <span id="participant-cnt">250</span></p>
+                            <?php
+                            $child_posts = types_child_posts("lesson");
+                            $child_posts = array_reverse($child_posts);
+                            ?>
+                            <p>Количество уроков: <span id="unit-cnt"><?php echo count($child_posts);?></span></p>
+                            <?php
+                                $users = get_users(array(
+                                    'connected_type' => 'member',
+                                    'connected_items' => $post
+                                ));
+                            ?>                            
+                            <p>Количество участников: <span id="participant-cnt"><?php echo count($users)?></span></p>
                         </div>
                         <div class="course-description">
                             <h3>Описание</h3>
@@ -30,8 +40,6 @@
                             <h3>Учебный план</h3>
                             <ol class="unit-list">                            
                             <?php
-                            $child_posts = types_child_posts("lesson");
-                            $child_posts = array_reverse($child_posts);
                             foreach ($child_posts as $child_post){
                                 echo '<li><a href="' . get_post_permalink($child_post->ID) . '">' . $child_post->post_title . '</a></li>';
                                 echo $child_post->fields['description'];

@@ -28,7 +28,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <?php ?>
+                            <?php get_template_part('user', 'panel');?>
                         </div>
                     </div>
                 </div>
